@@ -11,7 +11,12 @@ function select (selector, parent = document){
     return parent.querySelector(selector);
 
 }
+function onEvent (event, selector, callback) {
+    return selector.addEventListener(event,callback);
+}
+
 const content = select('.box-3');
+const avatar1 = select('.avatars');
 
 const url = 'https://randomuser.me/api/?nat=CA&results=10';
 
@@ -71,3 +76,9 @@ getMovies();
 
    
   
+onEvent('click',avatar1,function(){
+    
+    let url = './index.html';
+    window.location.assign(url);
+
+});
