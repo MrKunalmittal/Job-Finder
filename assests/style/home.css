@@ -115,7 +115,9 @@ nav ul li+li {
 
 /* ----------------- */
 /* ---basic style----- */
-
+section{
+    min-height: calc(100vh - 60px - 70px);
+}
 
 .row {
     margin-top: 20px;
@@ -232,6 +234,8 @@ button:hover{
     place-items: center;
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 5px;
+    border-bottom: #f2f3f4 solid;
 }
 
 
